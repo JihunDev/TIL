@@ -1,17 +1,14 @@
 # iBeacon
 iBeacon 만드는 비콘 명령어
 
-H/W
-------
+##H/W
 * HM-10 Bleutooth
 * FTDI
 
-S/W
------
+##S/W
 * [Hercules](https://www.hw-group.com/products/hercules/index_en.html)
 
-Pin Map
-----------
+##Pin Map
 | FTDI | HM-10 |
 |--|--|
 | VCC | VCC |
@@ -19,8 +16,7 @@ Pin Map
 | RX | TX |
 | TX | RX |
 
-AT Command Setting
--------
+##AT Command Setting
 ### 01 AT
 
 ### 02 AT+RENEW
