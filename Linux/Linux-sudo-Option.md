@@ -2,7 +2,9 @@
 ## echo '비밀번호' | sudo -S 명령어
 
 ### Example
-	$ echo '1234' | sudo -S vi test.txt
+```shell
+$ echo '1234' | sudo -S vi test.txt
+```
 
 -S 
 
@@ -11,7 +13,9 @@ sudo가 표준입력으로부터 암호부터 읽음
 ## echo '비밀번호' | sudo -kS 명령어
 
 #### Example
-	$ echo '1234' | sudo -kS vi test.txt
+```shell
+$ echo '1234' | sudo -kS vi test.txt
+```
 
 -kS
 
