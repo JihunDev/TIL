@@ -1,4 +1,7 @@
 # sudo -S -kS 옵션 
+
+
+
 ## echo '비밀번호' | sudo -S 명령어
 
 ### Example
@@ -6,18 +9,20 @@
 $ echo '1234' | sudo -S vi test.txt
 ```
 
--S 
+###### -S 
 
 sudo가 표준입력으로부터 암호부터 읽음
 
+
+
 ## echo '비밀번호' | sudo -kS 명령어
 
-#### Example
+### Example
 ```shell
 $ echo '1234' | sudo -kS vi test.txt
 ```
 
--kS
+###### -kS
 
 이미 sudo가 활성화 되면 sudo에 액세스 토큰이 생성 오류발생
 
