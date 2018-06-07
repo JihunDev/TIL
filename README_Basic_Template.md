@@ -1,6 +1,10 @@
-# Foobar ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+# Project Title ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-Foobar is a Python library for dealing with word pluralization.
+Provide an introductory paragraph, describing:
+
+- What your project does
+- Why people should consider using your project
+- Link to project home page
 
 
 
@@ -37,25 +41,31 @@ Let people know what your project can do specifically. If there is an alternativ
 
 ### Installation
 
-`$ pip install foobar`
+Instructions for how to install your project's build artifacts
+
+```
+Examples should be included
+```
+
+
 
 ### Usage
 
-```python
-import foobar
+Instructions for using your project. Ways to run the program, how to include it in another project, etc.
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
 ```
+Examples should be included
+```
+
+
 
 ### Development
 
 ```
-$ virtualenv foobar
-$ . foobar/bin/activate
-$ pip install -e .
+Examples should be included
 ```
+
+
 
 
 
@@ -67,4 +77,4 @@ Show your appreciation to those who have contributed to the project.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) file for details.
