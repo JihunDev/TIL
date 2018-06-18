@@ -31,17 +31,6 @@ $ chsh -s `which zsh`
 
 ## oh-my-zsh Setting
 
-### Name Delete
-
-zsh에서 기본으로 표시되는 andrew-macbook-pro부분 삭제
-
-```shell
-$ vim ~/.zshrc
-
-# 끝에 작성
-prompt_context() {}
-```
-
 
 
 ## Powerlevel9k Themes
@@ -51,7 +40,7 @@ $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/the
 
 $ vim ~/.zshrc
 
-# 테마 변경
+# Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_MODE='awesome-fontconfig'
@@ -96,8 +85,8 @@ $ brew cask install font-meslo-nerd-font
 $ brew install zsh-autosuggestions
 $ vi .zshrc
 # 추가
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-$ source .zshrc
+plugins=(git 
+zsh-autosuggestions)
 ```
 
 ### Syntax highlighting
@@ -107,8 +96,9 @@ $ source .zshrc
 $ brew install zsh-syntax-highlighting
 $ vi .zshrc
 # 추가
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-$ source .zshrc
+plugins=(git 
+zsh-syntax-highlighting 
+zsh-autosuggestions)
 ```
 ### autojump
 
@@ -116,9 +106,16 @@ $ source .zshrc
 # 설치
 $ brew install autojump
 $ vi .zshrc
-#추가
-plugins=(
-    git autojump
-)
+# 추가
+plugins=(git 
+autojump 
+zsh-syntax-highlighting 
+zsh-autosuggestions)
+```
+
+### 코드 적용
+
+```shell
+$ Source ~/.zshrc
 ```
 
