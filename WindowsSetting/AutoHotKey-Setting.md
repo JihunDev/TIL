@@ -1,6 +1,7 @@
 # AutoHotKey
 
-
+## 저장위치
+C:\Users\Com\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 
 ## CapsLock 한영전환
 
