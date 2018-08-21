@@ -1,6 +1,6 @@
 # RaspberryPi 3 B+
 
-##모니터 없이 파이 접속
+## 모니터 없이 Pi 접속
 
 1. SD카드 boot폴더 접속
 2. wpa_supplicant.conf 생성
