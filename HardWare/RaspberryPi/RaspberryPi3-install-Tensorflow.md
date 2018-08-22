@@ -20,7 +20,7 @@ $ sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev
 $ sudo apt-get install libssl-dev openssl
 ```
 
-### Python3.5 Download, Comaplie and install
+### Python3.5 Download, Complie and install
 ```shell
 $ cd /home/pi/
 $ mkdir temppython
