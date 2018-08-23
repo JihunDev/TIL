@@ -1,5 +1,9 @@
 # RaspberryPi 3 B+
 
+## Download
+
+[MobaXterm Download](https://mobaxterm.mobatek.net/)
+
 ## 모니터 없이 Pi 접속
 
 1. SD카드 boot폴더 접속
@@ -17,5 +21,5 @@ network={
 }
 ```
 
-5. 공유기에서 RaspberryPi ip확인후 SSH 이용하여 접속
+5. 공유기에서 RaspberryPi ip확인후 MobaXtem을 사요하여 SSH 접속
 6. 초기 ID : pi, PW: raspberry
