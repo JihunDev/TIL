@@ -1,11 +1,20 @@
 # Shell Setting
 
+## Homebrew
+
+```shell
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+ [Homberw HomePage](https://brew.sh/index_ko)
+
+
+
 ## iTerm2
+
 ```shell
 $ brew cask install iterm2
 ```
-
-or, Appstore Download iTerm2
 
 
 
@@ -116,6 +125,6 @@ zsh-autosuggestions)
 ### 코드 적용
 
 ```shell
-$ Source ~/.zshrc
+$ source ~/.zshrc
 ```
 
