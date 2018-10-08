@@ -10,6 +10,16 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 
+##  Vundle 설치
+
+.vimrc 연 상태에서
+
+```shell
+:PluginInstall
+```
+
+
+
 ## .vimrc Setting
 
 ```shell
@@ -143,8 +153,5 @@ let g:NERDTrimTrailingWhitespace = 1
 " customize keymapping
 map <Leader>cc <plug>NERDComToggleComment
 map <Leader>c<space> <plug>NERDComComment
-
-
-
 ```
 
