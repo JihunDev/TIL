@@ -25,3 +25,5 @@
     - 자동들여쓰기
 - platformio-ide-terminal
     - 터미널 플러그인
+
+## Github 연동
