@@ -3,9 +3,10 @@
 ## Basic Setting
 - Setting → Editor
     - Tab Length : 4
-
 - Setting → Packages
     - markdown-preivew : Disable
+- Setting -> core
+    - Title Bar : hide
 
 ## Themes Setting
 - Install → Themes
