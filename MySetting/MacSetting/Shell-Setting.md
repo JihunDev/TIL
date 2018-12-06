@@ -12,15 +12,13 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 ## iTerm2
 
-```shell
-$ brew cask install iterm2
-```
+### Theme
+[oceanic-next-iterm](https://github.com/mhartington/oceanic-next-iterm)
+- Preferences > Profiles > Colors > Color Persets 선택
 
+## zsh and oh-my-zsh
 
-
-## zsh and oh-my-zsh 
-
-### zsh with brew install 
+### zsh with brew install
 ```shell
 $ brew update
 $ brew install zsh
@@ -90,11 +88,11 @@ $ brew cask install font-meslo-nerd-font
 
 ### zsh-autosuggestions
 ```shell
-# 설치 
+# 설치
 $ brew install zsh-autosuggestions
 $ vi .zshrc
 # 추가
-plugins=(git 
+plugins=(git
 zsh-autosuggestions)
 ```
 
@@ -105,8 +103,8 @@ zsh-autosuggestions)
 $ brew install zsh-syntax-highlighting
 $ vi .zshrc
 # 추가
-plugins=(git 
-zsh-syntax-highlighting 
+plugins=(git
+zsh-syntax-highlighting
 zsh-autosuggestions)
 ```
 ### autojump
@@ -116,9 +114,9 @@ zsh-autosuggestions)
 $ brew install autojump
 $ vi .zshrc
 # 추가
-plugins=(git 
-autojump 
-zsh-syntax-highlighting 
+plugins=(git
+autojump
+zsh-syntax-highlighting
 zsh-autosuggestions)
 ```
 
@@ -127,4 +125,3 @@ zsh-autosuggestions)
 ```shell
 $ source ~/.zshrc
 ```
-
