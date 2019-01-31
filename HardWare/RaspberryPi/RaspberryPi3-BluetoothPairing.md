@@ -1,4 +1,4 @@
-#Bluetooth Pairing
+# Bluetooth Pairing
 
 ## 1. Bluez install
 ```shell
