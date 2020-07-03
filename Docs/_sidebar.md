@@ -1,6 +1,9 @@
 <!-- docs/_sidebar.md -->
 
-- [Home](/)
-
 - 📂**C**
-- [Const](/C/Reference-Const.md)
+	- 📂**Reference**
+	- [Const](/C/Reference-Const.md)
+
+
+- 📂**Git**
+	- [Merge Repositories](/Git/Merge-repostiories-in-git.md)
