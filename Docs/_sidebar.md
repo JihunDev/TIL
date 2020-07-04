@@ -2,8 +2,8 @@
 
 - 📂**C**
 	- 📂**Reference**
-	- [Const](/C/Reference-Const.md)
+    	- [Const](/C/Reference-Const.md)
 
 
 - 📂**Git**
-	- [Merge Repositories](/Git/Merge-repostiories-in-git.md)
+	- [Merge Repositories](/Git/Merge-repositories-in-git.md)
