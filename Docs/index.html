@@ -15,23 +15,29 @@
       name: '✏️ Today I Learned!',
       repo: 'https://github.com/JihunDev/TIL/',
       loadSidebar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 0,
       auto2top: true,
       themeColor: '#023459',
+      ga: 'UA-151933339-3',
+      share: {
+             reddit: true,
+             linkedin: true,
+             facebook: true,
+             twitter: true,
+             whatsapp: false,
+             telegram: false,
+         },
     }
   </script>
-  <!-- Google Analyics -->
-  <script>
-    window.$docsify = {
-      ga: 'UA-151933339-3'
-    }
-  </script>
+
+  <!-- Plugin Share -->
+  <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
+  <!-- Plugin Google Analytics -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
   <!-- Plugin Pagination -->
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <!-- Plugin Emoji-->  
+  <!-- Plugin Emoji -->  
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-  
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
