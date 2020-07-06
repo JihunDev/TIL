@@ -2,13 +2,25 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fe943f01-7efe-49b0-bd02-614dbc32ba67/deploy-status)](https://app.netlify.com/sites/brave-einstein-d2f693/deploys)
 
-> Jihun이 오늘 새로 배운 것을 다음의 규칙으로 commit 합니다. 
+> Jihun이 오늘 새로 배운 것을 다음의 규칙으로 commit 합니다.
 
 ## 작성 규칙
 - 문서 생성은 [GFM (Github Flavored Markdown)](https://help.github.com/articles/github-flavored-markdown/) 을 사용한다.
 - 언어나 기술명으로 폴더를 만든다. 
 - root에 문서를 만들지 않는다.
 - 파일명은 영어로 만든다.
+- 파일명은 아래의 규칙으로 작성한다.
+    - 파일명-파일_제목.md
+    - 파일명 규칙표
+  
+        |파일명            |설명             |
+        |----------------|----------------|
+        |Explain         |설명             |
+        |Difference      |차이점 분석        |
+        |Error           |에러 해결         |
+        |Setting         |설정 방법         |
+        |Command         |커맨드 설명       |
+
 
 ## Using Tool
 - [Netlify](https://www.netlify.com/)
