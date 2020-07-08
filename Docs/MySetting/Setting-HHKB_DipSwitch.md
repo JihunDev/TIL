@@ -1,6 +1,7 @@
 # HHKB DipSwitch
 
 ---
+![HHBK DipSwitch](https://i.imgur.com/xYgEitj.png)
 
 ## 모드 선택
 ### 1번 OFF, 2번 OFF - HHK 모드
@@ -16,8 +17,6 @@
   3. Fn과 조합으로 사이드 각인 되어있는 VolDn, VolUp, Mute, Eject, Option, Power, 텐키패드쪽의 Clear, Enter 키 사용 가능
 ### 1번 ON, 2번 ON - 사용불가
  - 키보드 동작 안함
-
----
 
 ## 기능 선택
 ### 3번 Delete 우측 상단키 기능 변경
