@@ -21,5 +21,5 @@
 - 📂 **My Setting**
   - [HHKB professional 2](/MySetting/Setting-HHKB_DipSwitch.md)
   - [VScode](/MySetting/Setting-VScode.md)
-  - [MacBookPro 2019](/MySetting/Setting-2019_MacBookPro.md)
-  - [MacBookPro 2020](/MySetting/Setting-2020_MacBookPro.md)
+  - [2019/MacBookPro](/MySetting/Setting-2019_MacBookPro.md)
+  - [2020/MacBookPro](/MySetting/Setting-2020_MacBookPro.md)
