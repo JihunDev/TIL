@@ -1,4 +1,4 @@
-# Library & API & Framework & Engine & SDK Difference
+# Library & API & Framework & Engine & SDK
 
 각각의 특징 및 차이점 정리
 
