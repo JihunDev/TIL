@@ -6,9 +6,12 @@
 - 📂 **Git**
   - [Merge other Repositories](/Git/Reference-Merge-Other_repositories.md)
 
-- 📂 **Git**
+- 📂 **Linux**
   - **Command**
-
+    - [Tmux](Linux/Command-Tmux.md)
+    - [Vim](Linux/Command-Vim.md)
+    - [sudo Option](Linux/Command-Option-sudo.md)
+  
 - 📂 **HardWare**
   - **Difference**
     - [Vcc & Vee & Vdd & Vss](/HardWare/Difference-Vcc_Vee_Vdd_Vss.md)
