@@ -112,20 +112,4 @@ docsify serve ./Docs
 
 ## Netlify 설정 방법
 
-![NetlifySetting1](https://imgur.com/9pUgVnc.png)
-- 로그인
-
-![NetlifySetting2](https://imgur.com/XoC3lOb.png)
-- New site from Git을 눌러 진행
-
-![NetlifySetting3](https://imgur.com/cVVQbxb.png)
-- Github, Gitlab, Bitbucket중 Docsify을 만든 곳을 선택
-
-![NetlifySetting4](https://i.imgur.com/1cMbV7n.png)
-- Only Select Repositories에서 선택
-
-![NetlifySetting5](https://imgur.com/5jFb0Vo.png)
-- Deploy Site 버튼 클릭
-
-![NetlifySetting6](https://imgur.com/zPQCEkP.png)
-- Publish Directory에 docs/ 추가
+> 📄 [NETLIFY_SETUP.md](./NETLIFY_SETUP.md) 참고
