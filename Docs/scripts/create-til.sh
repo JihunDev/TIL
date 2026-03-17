@@ -120,5 +120,14 @@ sed "s/YYYY-MM-DD/$TODAY/g" "$TEMPLATE" > "$FILENAME"
 echo "✅ TIL 생성: $(basename $FILENAME)"
 echo "   경로: $FILENAME"
 
+# ── 사이드바 자동 업데이트 ────────────────────────────────────
+# _sidebar.md (Docsify/GitHub Pages) + SUMMARY.md (GitBook) 재생성
+if command -v python3 &>/dev/null; then
+  echo "🔄 사이드바 업데이트 중..."
+  python3 "$SCRIPT_DIR/generate-sidebar.py"
+else
+  echo "⚠️  python3 미설치 — 사이드바는 GitHub Actions에서 자동 업데이트됩니다."
+fi
+
 # 에디터 열기 (EDITOR 환경변수 우선, 없으면 vi)
 ${EDITOR:-vi} "$FILENAME"
