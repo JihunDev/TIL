@@ -1,0 +1,63 @@
+name: 🚀 Deploy to GitHub Pages
+
+# ── 트리거 ────────────────────────────────────────────────────
+on:
+  push:
+    branches: [master]
+    paths:
+      - "Docs/**"          # Docs 폴더 변경 시에만 실행
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:       # 수동 실행 허용
+
+# gh-pages 브랜치에 쓰기 권한 부여
+permissions:
+  contents: write
+
+# ── 잡 ───────────────────────────────────────────────────────
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) 소스 체크아웃
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0   # 전체 히스토리 (푸시 시 필요)
+
+      # 2) Python 설정
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3) 사이드바 자동 생성
+      #    _sidebar.md (Docsify) + SUMMARY.md (GitBook) 동시 생성
+      - name: 📝 Generate _sidebar.md & SUMMARY.md
+        run: python3 Docs/scripts/generate-sidebar.py
+
+      # 4) 변경된 사이드바 파일을 master 브랜치에 커밋
+      #    [skip ci] 태그로 재귀 트리거 방지
+      - name: 💾 Commit updated sidebar files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Docs/_sidebar.md Docs/SUMMARY.md
+          if git diff --staged --quiet; then
+            echo "✅ 사이드바 변경 없음 — 커밋 스킵"
+          else
+            git commit -m "chore: auto-update sidebar [skip ci]"
+            git push
+          fi
+
+      # 5) gh-pages 브랜치로 배포
+      #    Docs/ 폴더 전체를 GitHub Pages 루트로 발행
+      - name: 🌐 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token:  ${{ secrets.GITHUB_TOKEN }}
+          publish_dir:   ./Docs
+          publish_branch: gh-pages
+          force_orphan:  true          # gh-pages 히스토리 누적 방지
+          commit_message: "deploy: ${{ github.sha }} [skip ci]"

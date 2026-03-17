@@ -1,0 +1,8 @@
+# GitBook 설정
+# https://docs.gitbook.com/integrations/git-sync/content-configuration
+
+root: ./Docs
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
